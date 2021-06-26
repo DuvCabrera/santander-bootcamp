@@ -17,10 +17,10 @@ fun calculate(numberOne:Float, numberTwo:Float, opNumber:Int):Float{
     """
 }
 
-fun sum(n1:Float, n2:Float) = n1.plus(n2) """ realize sum between 2 parameters """
+fun sum(n1:Float, n2:Float) = n1.plus(n2) """ perform a sum between 2 parameters """
 
-fun minus(n1:Float, n2:Float) = n1.minus(n2) """ realize minus operation between 2 parameters """
+fun minus(n1:Float, n2:Float) = n1.minus(n2) """ perform a 'minus' operation between 2 parameters """
 
-fun times(n1:Float, n2:Float) = n1.times(n2) """ realize times operation between 2 parameters """
+fun times(n1:Float, n2:Float) = n1.times(n2) """ perform times operation between 2 parameters """
 
-fun div(n1:Float, n2:Float) = n1.div(n2) """ realize div between 2 parameters """
+fun div(n1:Float, n2:Float) = n1.div(n2) """ perform div between 2 parameters """
