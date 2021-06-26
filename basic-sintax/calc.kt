@@ -1,12 +1,19 @@
 
-fun calculate(n1:Float, n2:Float, operation:(Float, Float)->Float):Float{
-    val result = operation(n1,n2)
-    return result
+fun calculate(numberOne:Float, numberTwo:Float, opNumber:Int):Float{
+    when{
+        opNumber == 1 -> sum(numberOne, numberTwo)
+        opNumber == 2 -> minus(numberOne, numberTwo)
+        opNumber == 3 -> times(numberOne, numberTwo)
+        opNumber == 4 -> div(numberOne, numberTwo)
+        else -> "Error: parameter does not match with the expected"
+    }
+    return 
     """
     Will receive 2 paremeters and one function
-    :parameter n1 : Float its a number
-    :parameter n2 : Float its a number
-    :function operation will realize the designated math
+    :parameter numberOne : Float its a number
+    :parameter numberTwo : Float its a number
+    :parameter opNumber : Int its the number of the operation that will
+    be executed 
     """
 }
 
