@@ -1,1 +1,3 @@
 # santander-bootcamp
+- in this repository will be storage all work done in the santander bootcamp
+    First project its implement a calculator on kotlin language...
