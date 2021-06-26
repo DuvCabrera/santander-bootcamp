@@ -1,8 +1,8 @@
 fun main(){
-    a = calculate(2,2,1)
-    b = calculate(2,2,2)
-    c = calculate(2,2,3)
-    d = calculate(2,2,4)
+    var a = calculate(2f,2f,1)
+    var b = calculate(2f,2f,2)
+    var c = calculate(2f,2f,3)
+    var d = calculate(2f,2f,4)
     print(a)
     print(b)
     print(c)
@@ -11,13 +11,13 @@ fun main(){
 }
 
 
-fun calculate(numberOne:Float, numberTwo:Float, opNumber:Int):Float{
+fun calculate(numberOne:Float, numberTwo:Float, opNumber:Int):Float?{
     return when{
         opNumber == 1 -> sum(numberOne, numberTwo)
         opNumber == 2 -> minus(numberOne, numberTwo)
         opNumber == 3 -> times(numberOne, numberTwo)
         opNumber == 4 -> div(numberOne, numberTwo)
-        else -> "Error: parameter does not match with the expected"
+        else -> null
     }
     /*
     Will receive 2 paremeters and one function
