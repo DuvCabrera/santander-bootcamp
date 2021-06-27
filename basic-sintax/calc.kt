@@ -35,3 +35,11 @@ fun minus(n1:Float, n2:Float) = n1.minus(n2) /* perform a 'minus' operation betw
 fun times(n1:Float, n2:Float) = n1.times(n2) /* perform times operation between 2 parameters */
 
 fun div(n1:Float, n2:Float) = n1.div(n2) /* perform div between 2 parameters */
+
+fun fatorial(n1:Float, n2: Float):Float{
+    if (n1 == 1f || n2 == 1f){ return 1f}
+
+    if (n1 == 0f || n2 == 0f){ return 0f}
+
+    return n1 * fatorial(n1 - 1, n2); n2 * fatorial(n1, n2 -1)
+}
