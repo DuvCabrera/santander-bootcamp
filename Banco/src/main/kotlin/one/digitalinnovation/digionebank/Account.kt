@@ -3,9 +3,18 @@ package one.digitalinnovation.digionebank
 import java.math.BigDecimal
 
 class Account {
-    val agencia: String,
-    val numero: String,
-    val Saldo: BigDecimal,
+    val agencia: String
+        get() {
+            TODO()
+        }
+    val numero: String
+        get() {
+            TODO()
+        }
+    val Saldo: BigDecimal
+        get() {
+            TODO()
+        }
 
     fun deposito(valor: BigDecimal){
 
