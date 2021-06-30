@@ -5,7 +5,7 @@ import java.math.BigDecimal
 class Account {
     val agencia: String,
     val numero: String,
-    val Saldo: BigDecimal
+    val Saldo: BigDecimal,
 
     fun deposito(valor: BigDecimal){
 
