@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Boot-CalcNota</string>
-    <string name="nota_1">Nota 1</string>
-    <string name="total_de_faltas">Total de Faltas</string>
-    <string name="calcular">Calcular</string>
-    <string name="nota_2">Nota 2</string>
-</resources>
