@@ -1,0 +1,2 @@
+com/example/boot_calcnota/BuildConfig.java
+ com.example.boot_calcnota.BuildConfig
