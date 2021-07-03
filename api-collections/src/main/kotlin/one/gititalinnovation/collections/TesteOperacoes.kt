@@ -8,9 +8,9 @@ fun main() {
     }
 
     println("--------------")
-    println("Maior salario: ${salarios.max()}")
+    println("Maior salario: ${salarios.maxOrNull()}")
     /* get the biggest number in salario array */
-    println("Menor salario: ${salarios.min()}")
+    println("Menor salario: ${salarios.minOrNull()}")
     /* get the smallest number in salario array */
     println("Media salarial: ${salarios.average()}")
     /* get the average of numbers in salario array */
@@ -27,6 +27,7 @@ fun main() {
 
     println("--------------")
     println(salarios.find { it == 1500.0})
+    println(salarios.find { it == 500.0})
     /*look in the array and find the value*/
 
     println("--------------")
