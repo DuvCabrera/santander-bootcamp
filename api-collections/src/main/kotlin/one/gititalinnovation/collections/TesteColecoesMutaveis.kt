@@ -1,9 +1,9 @@
 package one.gititalinnovation.collections
 
 fun main() {
-    val joao = Funcioario("João", 4000.0, "CLT")
-    val pedro = Funcioario("Pedro", 2000.0, "PJ")
-    val maria = Funcioario("Maria", 3000.0, "CLT")
+    val joao = Funcionario("João", 4000.0, "CLT")
+    val pedro = Funcionario("Pedro", 2000.0, "PJ")
+    val maria = Funcionario("Maria", 3000.0, "CLT")
 
     /* make a list of funcionarios*/
     val funcionarios = mutableListOf(joao, maria)
