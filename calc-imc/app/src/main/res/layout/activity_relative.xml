@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".relative">
 
     <TextView
         android:id="@+id/titleTXT"
         style="@style/title_black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        tools:visibility="visible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/imc"
@@ -19,6 +20,9 @@
     <EditText
         android:id="@+id/pesoEDT"
         style="@style/text"
+        android:layout_below="@id/titleTXT"
+        android:layout_marginHorizontal="24dp"
+        android:layout_centerInParent="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/peso_kg" />
@@ -26,6 +30,11 @@
     <EditText
         android:id="@+id/alturaEDT"
         style="@style/text"
+        android:layout_marginHorizontal="24dp"
+        android:layout_alignEnd="@id/pesoEDT"
+        android:layout_alignStart="@id/pesoEDT"
+        android:layout_below="@id/pesoEDT"
+        tools:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/altura" />
@@ -34,10 +43,14 @@
         android:id="@+id/calcBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="46dp"
+        android:layout_below="@+id/alturaEDT"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="382dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:padding="16dp"
         android:text="@string/calcular"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        tools:visibility="visible" />
 
-</LinearLayout>
+</RelativeLayout>
