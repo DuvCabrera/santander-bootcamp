@@ -33,7 +33,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@C:\Users\Julyah\.android\avd\Pixel_3a_API_30_x86.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -81,6 +80,7 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-07-02T18:24:02.851684900Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../calc-imc" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -177,5 +177,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="527" y="157" key="AndroidCreateXmlResourceDialog/0.0.1366.738@0.0.1366.738" timestamp="1625249969064" />
+    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1625800923567">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1625800923567" />
   </component>
 </project>
