@@ -7,6 +7,14 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
+    dataBinding {
+        enabled = true
+    }
+
+    viewBinding{
+        enabled = true
+    }
+
     defaultConfig {
         applicationId "com.duv.calc_imc"
         minSdkVersion 21
