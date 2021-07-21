@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">conceitos-aparencia-estilo</string>
     <string name="iv_photograph_content_description">imagem do contato</string>
+
+    <string name="menu_1">Menu 1</string>
+    <string name="menu_2">Menu 2</string>
 </resources>
