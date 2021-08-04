@@ -45,8 +45,8 @@ class NotesProvider : ContentProvider() {
             val id = db.insert(TABLE_NOTES, null, values)
             val insertURI = Uri.withAppendedPath(BASE_URI, id.toString())
             db.close()
-            context?.contentResolver?.notifyChange(uri, null)
-            return insertURI
+                context?.contentResolver?.notifyChange(uri, null)
+                return insertURI
         } else {
             throw UnsupportedSchemeException("Uri invalida para inserção")
         }
@@ -60,12 +60,14 @@ class NotesProvider : ContentProvider() {
             mUriMatcher.match(uri) == NOTES -> {
                 val db:SQLiteDatabase = dbHelper.writableDatabase
                 val cursor = db.query(TABLE_NOTES, projection, selection, selectionArgs, null, null, sortOrder)
+                db.close()
                 cursor.setNotificationUri(context?.contentResolver, uri)
                 cursor
             }
             mUriMatcher.match(uri) == NOTES_BY_ID -> {
                 val db:SQLiteDatabase = dbHelper.writableDatabase
                 val cursor = db.query(TABLE_NOTES, projection, "$_ID = ?", arrayOf(uri.lastPathSegment), null, null, sortOrder)
+                db.close()
                 cursor.setNotificationUri((context as Context).contentResolver, uri )
                 cursor
             }
