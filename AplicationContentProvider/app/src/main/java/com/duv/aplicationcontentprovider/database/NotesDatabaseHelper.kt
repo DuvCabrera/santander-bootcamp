@@ -11,7 +11,7 @@ class NotesDatabaseHelper(context: Context
         db?.execSQL("CREATE TABLE $TABLE_NOTES (" +
                 "$_ID INTERGER NOT NULL PRIMARY KEY, " +
                 "$TITLE_NOTES TEXT NOT NULL, " +
-                "$DESCRIPITON_NOTES TEXT NOT NULL)")
+                "$DESCRIPTION_NOTES TEXT NOT NULL)")
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
@@ -20,6 +20,6 @@ class NotesDatabaseHelper(context: Context
     companion object {
         const val TABLE_NOTES: String = "Notes"
         const val TITLE_NOTES: String = "tilte"
-        const val DESCRIPITON_NOTES: String = "descripition"
+        const val DESCRIPTION_NOTES: String = "descripition"
     }
 }
