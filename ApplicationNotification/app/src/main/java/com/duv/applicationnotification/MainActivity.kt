@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         btnSend = findViewById(R.id.button_send_notification)
         btnSend.setOnClickListener {
-
+            this.showNotfication("1234", "bootcamp Android", "Kotlin Android curso")
         }
     }
 }
