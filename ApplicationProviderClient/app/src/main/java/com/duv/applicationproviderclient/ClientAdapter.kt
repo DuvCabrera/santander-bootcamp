@@ -15,7 +15,7 @@ class ClientAdapter (private val mCursor: Cursor): RecyclerView.Adapter<ClientVi
     override fun onBindViewHolder(holder: ClientViewHolder, position: Int) {
         mCursor.moveToPosition(position)
         holder.clientTitle.text = mCursor.getString(mCursor.getColumnIndex("title"))
-        holder.clientDescription.text = mCursor.getString(mCursor.getColumnIndex("description")))
+        holder.clientDescription.text = mCursor.getString(mCursor.getColumnIndex("description"))
     }
 
     override fun getItemCount(): Int = mCursor.count
