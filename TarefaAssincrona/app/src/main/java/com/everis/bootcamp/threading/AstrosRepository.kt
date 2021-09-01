@@ -1,8 +1,10 @@
 package com.everis.bootcamp.threading
 
 import com.google.gson.Gson
+import com.google.gson.JsonArray
 import okhttp3.OkHttpClient
 import okhttp3.Request
+import okhttp3.ResponseBody
 
 class AstrosRepository {
     fun loadData() : List<AstrosPeople>? {
@@ -11,7 +13,7 @@ class AstrosRepository {
             .url("http://api.open-notify.org/astros.json")
             .build()
         val response = client.newCall(request).execute()
-        val result = parseJsonToResult(response.body?.toString())
+        val result = parseJsonToResult(response.body.toString())
         return result.people
     }
 
