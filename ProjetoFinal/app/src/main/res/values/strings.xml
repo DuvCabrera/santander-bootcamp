@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ToDoFinal</string>
+    <string name="task_title">Tarefas</string>
+    <string name="title_hint">Titulo</string>
+    <string name="description_hint">Descrição</string>
+    <string name="data_hint">Data</string>
+    <string name="hour_hint">Hora</string>
+    <string name="create_task">Criar tarefa</string>
+    <string name="btn_cancel">Cancelar</string>
+</resources>
