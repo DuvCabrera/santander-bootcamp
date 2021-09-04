@@ -7,4 +7,8 @@
     <string name="hour_hint">Hora</string>
     <string name="create_task">Criar tarefa</string>
     <string name="btn_cancel">Cancelar</string>
+    <string name="label_description_new_task">Nova Tarefa</string>
+    <string name="label_edit">Editar</string>
+    <string name="label_delete">Deletar</string>
+    <string name="empty_task_txt">Ops,Você não possui\n nenhuma tarefa</string>
 </resources>
